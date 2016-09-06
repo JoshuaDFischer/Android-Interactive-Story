@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joshuadf.interactivestory.ui.StoryActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyImageView"
+        android:src="@drawable/page0"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You continue your course to Earth. Two days later, you receive a transmission from HQ saying that they have detected some sort of anomaly on the surface of Mars near an abandoned rover. They ask you to investigate, but ultimately the decision is yours because your mission has already run much longer than planned and supplies are low. "
+        android:id="@+id/storyTextView"
+        android:layout_below="@+id/storyImageView"
+        android:layout_alignLeft="@+id/storyImageView"
+        android:layout_alignStart="@+id/storyImageView"
+        android:paddingTop="15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop and investigate"
+        android:id="@+id/choiceBtn2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/storyTextView"
+        android:layout_alignStart="@+id/storyTextView"
+        android:background="@android:color/white"
+        android:textColor="#FF3A8AAC" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue onto Earth"
+        android:id="@+id/choiceBtn1"
+        android:layout_above="@+id/choiceBtn2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:textColor="#ff3a8aac" />
+</RelativeLayout>
